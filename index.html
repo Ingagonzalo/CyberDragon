@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/3b80f70e98.js" crossorigin="anonymous"></script> <!-- KIT DE LOGOS -->
+    <link
+      rel="shortcut icon"
+      href="./images/logo.png"
+      sizes="32x32"
+      type="image/x-icon"
+    />
     <title>Cyber Dragon</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logocontexto.png" alt="" />
+
+      <nav class="nav">
+        <div class="nav_container">
+          <div class="nav_menu">
+            <a href="#" class="nav_item">+ Productos</a>
+            <a href="#" class="nav_item">PC</a>
+            <a href="#" class="nav_item">Consolas</a>
+            <a href="#" class="nav_item">Notebooks</a>
+            <a href="#" onclick="showArray()"> Lista de Productos </a>
+            <a href="#" class="nav_item_2" onclick="searchItem()"
+              >Buscar Producto</a
+            >
+            <a href="#" class="nav_item_2" onclick="addItem()"
+              >Agregar Producto</a
+            >
+            <a href="#" class="nav_item_2" onclick="showShop()"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="spam">
+      <div>
+        <h2>Bienvenidos a <strong class="resaltar">CyberDragon</strong></h2>
+        <h3>Una nueva experiencia en tiendas Gaming</h3>
+      </div>
+      <img
+        src="./images/publicidad1.jpg"
+        alt="yaconseguireunaimagendecalidad"
+      />
+    </section>
+
+    <section class="presentacion">
+      <h2>Almacenamiento</h2>
+      <h3>Discos Rigidos</h3>
+      <div>
+        <article>
+          <img src="./images/discorigido1.jpg" alt="" />
+          <h2>Disco Rigido Hdd 1tb Western Digital Blue</h2>
+          <h3>$5.989</h3>
+          <a href="#" class="boton_add" onclick="producto1()"
+            >Agregar al Carrito</a
+          >
+        </article>
+        <article>
+          <img src="./images/discorigido2.jpg" alt="" />
+          <h2>Disco Rigido Hdd 1tb Seagate Barracuda</h2>
+          <h3>$6.454</h3>
+          <a href="#" class="boton_add" onclick="producto2()"
+            >Agregar al Carrito</a
+          >
+        </article>
+        <article>
+          <img src="./images/discorigido3.jpg" alt="" />
+          <h2>Disco Rigido Hdd 2tb Western Digital Blue 256mb</h2>
+          <h3>$6.974</h3>
+          <a href="#" class="boton_add" onclick="producto3()"
+            >Agregar al Carrito</a
+          >
+        </article>
+        <article>
+          <img src="./images/discorigido4.jpg" alt="" />
+          <h2>Disco Rigido Hdd 6tb Toshiba Performance X300</h2>
+          <h3>$25.634</h3>
+          <a href="#" class="boton_add" onclick="producto4()"
+            >Agregar al Carrito</a
+          >
+        </article>
+      </div>
+      <div>
+        <article>
+          <img src="./images/discorigido1.jpg" alt="" />
+          <h2>Disco Rigido Hdd 1tb Western Digital Blue</h2>
+          <h3>$5.989</h3>
+          <a href="#" class="boton_add" onclick="producto1()"
+            >Agregar al Carrito</a
+          >
+        </article>
+        <article>
+          <img src="./images/discorigido2.jpg" alt="" />
+          <h2>Disco Rigido Hdd 1tb Seagate Barracuda</h2>
+          <h3>$6.454</h3>
+          <a href="#" class="boton_add" onclick="producto2()"
+            >Agregar al Carrito</a
+          >
+        </article>
+        <article>
+          <img src="./images/discorigido3.jpg" alt="" />
+          <h2>Disco Rigido Hdd 2tb Western Digital Blue 256mb</h2>
+          <h3>$6.974</h3>
+          <a href="#" class="boton_add" onclick="producto3()"
+            >Agregar al Carrito</a
+          >
+        </article>
+        <article>
+          <img src="./images/discorigido4.jpg" alt="" />
+          <h2>Disco Rigido Hdd 6tb Toshiba Performance X300</h2>
+          <h3>$25.634</h3>
+          <a href="#" class="boton_add" onclick="producto4()"
+            >Agregar al Carrito</a
+          >
+        </article>
+      </div>
+    </section>
+  </body>
 </html>

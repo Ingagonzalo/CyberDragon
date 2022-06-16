@@ -1,0 +1,160 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+}
+
+body {
+  // background: rgb(122,122,122);
+  //background: radial-gradient(circle, rgba(122,122,122,1) 0%, rgba(0,0,0,1) 100%);
+  background-color: #202324;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  background-color: black;
+  padding: 0px 5%;
+
+  img {
+    width: 210px;
+    background-color: black;
+    padding-right: 40px;
+  }
+  nav {
+    background-color: rgb(32, 32, 32);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    div {
+      a {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        color: white;
+        &:hover {
+          color: rgb(116, 20, 116);
+        }
+      }
+    }
+  }
+}
+
+.nav_item_2 {
+  background-color: #7200ff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.spam {
+  div {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    h2 {
+      text-transform: uppercase;
+      font-size: 7rem;
+      width: 50%;
+     color: white;
+      strong {
+        color: #7200ff;
+      }
+    }
+    h3 {
+      margin-top: 10px;
+      color: white;
+      font-size: 1.5rem;
+      color: #dcbfff;
+    }
+  }
+  img {
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+.presentacion {
+  width: 80%;
+  margin: 0 auto;
+
+  margin-top: 40px;
+  h2 {
+    display: inline;
+    font-size: 2rem;
+    border-bottom: solid 2px #7200ff;
+  }
+  h3 {
+    display: inline;
+    color: #7200ff;
+    font-size: 2rem;
+    
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    article {
+      margin: 0 20px;
+      background-color: rgb(24, 24, 24);
+      
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      height: 500px;
+      box-sizing: content-box;
+      &:hover{
+        box-shadow: 2px 2px 15px #7200ff;
+      }
+      img {
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      h2 {
+        text-align: center;
+        width: 250px;
+        
+        margin: 0 auto;
+        border: none;
+        font-size: 1.5rem;
+      }
+      h3{
+        font-size: 3rem;
+        margin-top: 40px;
+        text-align: center;
+        border: none;
+      }
+      a{
+        text-align: center;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #a84cd3;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1300px){
+    .nav_item{
+        display: none;
+    }
+}
