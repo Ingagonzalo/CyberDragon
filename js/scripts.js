@@ -100,8 +100,8 @@ const mostrarProductos = ( productos ) => {
     contenerdorProductos.appendChild(div)  
     const boton = document.getElementById(`boton${producto.id}`)
     boton.addEventListener('click', ()=>{
-        carritoIndex(producto.id)
-        alert(`Se agrego ${producto.nombre}`)
+        alert(`Aca estoy ${producto.nombre}`)
+
     })
     
     })

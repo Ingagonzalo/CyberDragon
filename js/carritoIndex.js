@@ -1,5 +1,5 @@
 import { productos } from './productos.js';
-
+/*ESTOY TENIENDO UN ERROR PARA UTILIZAR ESTA PARTE QUE EXPLICAN EN EL AFTERCLASS PERO YA LE VOY A DAR LA VUELTA */
 let carritoCompras = [];
 
 export const carritoIndex = (productoId)=>{
