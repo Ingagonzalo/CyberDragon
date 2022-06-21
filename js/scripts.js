@@ -1,3 +1,5 @@
+
+
 const items = [] /*Creo mi array */
 const carrito = []
 
@@ -13,27 +15,7 @@ class item { /*Creo Mi constructor */
     }
 } 
 
-class shop {
-    constructor(id, category, name, price){
-        this.id = id
-        this.category = category
-        this.name = name
-        this.price = price
-    }
-}
 
-function producto1(){
-    carrito.push(new shop(1349, "Almacenamiento", "Disco Rigido Hdd 1tb Western Digital Blue", 5989))
-}
-function producto2(){
-    carrito.push(new shop(1939, "Almacenamiento", "Disco Rigido Hdd 1tb Seagate Barracuda", 6454))
-}
-function producto3(){
-    carrito.push(new shop(1149, "Almacenamiento", "Disco Rigido Hdd 2tb Western Digital Blue 256mb", 6974))
-}
-function producto4(){
-    carrito.push(new shop(1341, "Almacenamiento", "Disco Rigido Hdd 6tb Toshiba Performance X300", 25634))
-}
 
 
 function generadorAutomatico() { //generador automatico de arrays
@@ -99,3 +81,33 @@ function searchItem() {
         console.table(resultado) //mostrar el resultado en pantalla
     }
 }
+
+
+import { productos } from './productos.js'
+import { carritoIndex } from './carritoIndex.js'
+
+const mostrarProductos = ( productos ) => {
+    const contenerdorProductos = document.getElementById('productos-contenedor')
+    productos.forEach(producto => {
+        const div= document.createElement('div')
+        div.classList.add('card')
+        div.innerHTML +=  ` 
+                                <img src="${producto.img}" class="card-img-top" alt="">
+                                <h2 class="card-title">${producto.nombre}</h2>
+                                <h3 class="card-text">$ ${producto.precio}</h3>
+                                <button class="boton_add" id=boton${producto.id}>Comprar</button>
+                            `
+    contenerdorProductos.appendChild(div)  
+    const boton = document.getElementById(`boton${producto.id}`)
+    boton.addEventListener('click', ()=>{
+        carritoIndex(producto.id)
+        alert(`Se agrego ${producto.nombre}`)
+    })
+    
+    })
+    
+}
+
+
+mostrarProductos(productos)
+

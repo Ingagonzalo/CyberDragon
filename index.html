@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script defer src="./js/scripts.js" type="module"></script>
+  
     <link rel="stylesheet" href="./css/style.css" />
-    <script defer src="./js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/3b80f70e98.js" crossorigin="anonymous"></script> <!-- KIT DE LOGOS -->
     <link
       rel="shortcut icon"
@@ -49,7 +51,7 @@
       />
     </section>
 
-    <section class="presentacion">
+    <!--  <section class="presentacion">
       <h2>Almacenamiento</h2>
       <h3>Discos Rigidos</h3>
       <div>
@@ -120,6 +122,32 @@
           >
         </article>
       </div>
+    </section>-->
+
+
+    <section class="presentacion">
+      <h2>Almacenamiento</h2>
+      <h3>Discos Rigidos</h3>
+      <section id="productos-contenedor">
+
+      </section>
+        
+      
     </section>
+    <main id="productos-coenedor">
+      <div class="modal-container" id="modal-container">
+        <div class="modal-carrito">
+          <h3>carrito</h3>
+          <button id="cerrar">
+            Cerrar
+          </button>
+          <div class="carrito-contenedor">
+
+          </div>
+        </div>
+      </div>
+
+    </main>
   </body>
+  <script defer src="./js/productos.js"  type="module"></script>
 </html>
