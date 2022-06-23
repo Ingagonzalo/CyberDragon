@@ -154,6 +154,7 @@ header {
   margin: 0 auto;
   margin-top: 40px;
   font-size: 1.2rem;
+
 }
 
 
@@ -161,6 +162,52 @@ header {
   display: flex;
 }
 
+.modal-container{
+  
+  background-color: #d63946;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  width: 385px;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+}
+
+.productoEnCarrito{
+  margin: 0 auto;
+  div{
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    div{
+    flex-direction: column;
+      h2{
+        font-size: 1.6rem;
+        width: 200px;
+      }
+      h3{
+        font-size: 1.5rem;
+        width: 100px;
+      }
+    }
+   
+  }
+}
+
+#cerrar{
+  background-color: #fff;
+  color: #d63946;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
 @media screen and (min-width: 480px) and (max-width: 1300px){
     .nav_item{

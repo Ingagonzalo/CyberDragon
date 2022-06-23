@@ -4,19 +4,40 @@ let carritoCompras = [];
 
 export const carritoIndex = (productoId)=>{
     
-    const contenedorCarrito= document.getElementById(`carrito-contenedor`)
-    const renderProductoCarrito = () =>{
+    const contenedorCarrito= document.getElementById("carrito-contenedor")
+    
+    const cargarProductoCarrito = () =>{
         let producto = productos.find (producto => producto.id == productoId)
         carritoCompras.push(producto)
         producto.cantidad=1
-        let div= document.createElement('div')
+        let div = document.createElement('div')
         div.classList.add('productoEnCarrito')
-        div.innerHTML = `<p>${producto.nombre}<p/>
-                        <p>Precio: ${producto.precio}<p/>
-                        <p>id="cantidad${producto.id}">Cantidad:${producto.cantidad}<p/>
+        div.innerHTML += `
+                            <div>
+
+                         <div>
+                             
+                             <h2 class="card_title_carrito">${producto.nombre}</h2>
+                             <h3 class="card-text_carrito">$ ${producto.precio}</h3>
+                             <p id="cantidad${producto.id}">Cantidad:${producto.cantidad}<p/>
+                         </div>
+                         <img src="${producto.img}"alt="">
                         
+                         </div>
                         `
-        contenedorCarrito.appendChild(div)
+        contenedorCarrito.appendChild(div) 
+
     }
-renderProductoCarrito()
+    cargarProductoCarrito()
+}
+
+document.querySelector("#carrito").onclick = function () {
+	document.querySelector("#modal-container").style.display = "flex"	
+	// body...
+}
+
+
+document.querySelector("#cerrar").onclick = function () {
+	document.querySelector("#modal-container").style.display = "none"	
+	// body...
 }

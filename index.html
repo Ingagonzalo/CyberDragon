@@ -9,6 +9,7 @@
   
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://kit.fontawesome.com/3b80f70e98.js" crossorigin="anonymous"></script> <!-- KIT DE LOGOS -->
+    <script src="./js/buscador.js"></script>
     <link
       rel="shortcut icon"
       href="./images/logo.png"
@@ -32,10 +33,11 @@
             <a href="#" class="nav_item_2" onclick="searchItem()"
               >Buscar Producto</a
             >
+            <input type="text" class="nav_item_2" id="buscador" style="color:black" placeholder="Ingrese el Producto">
             <a href="#" class="nav_item_2" onclick="addItem()"
               >Agregar Producto</a
             >
-            <a href="#" class="nav_item_2" onclick="showShop()"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="nav_item_2" id="carrito" onclick="showShop()"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
       </nav>
@@ -51,80 +53,6 @@
       />
     </section>
 
-    <!--  <section class="presentacion">
-      <h2>Almacenamiento</h2>
-      <h3>Discos Rigidos</h3>
-      <div>
-        <article>
-          <img src="./images/discorigido1.jpg" alt="" />
-          <h2>Disco Rigido Hdd 1tb Western Digital Blue</h2>
-          <h3>$5.989</h3>
-          <a href="#" class="boton_add" onclick="producto1()"
-            >Agregar al Carrito</a
-          >
-        </article>
-        <article>
-          <img src="./images/discorigido2.jpg" alt="" />
-          <h2>Disco Rigido Hdd 1tb Seagate Barracuda</h2>
-          <h3>$6.454</h3>
-          <a href="#" class="boton_add" onclick="producto2()"
-            >Agregar al Carrito</a
-          >
-        </article>
-        <article>
-          <img src="./images/discorigido3.jpg" alt="" />
-          <h2>Disco Rigido Hdd 2tb Western Digital Blue 256mb</h2>
-          <h3>$6.974</h3>
-          <a href="#" class="boton_add" onclick="producto3()"
-            >Agregar al Carrito</a
-          >
-        </article>
-        <article>
-          <img src="./images/discorigido4.jpg" alt="" />
-          <h2>Disco Rigido Hdd 6tb Toshiba Performance X300</h2>
-          <h3>$25.634</h3>
-          <a href="#" class="boton_add" onclick="producto4()"
-            >Agregar al Carrito</a
-          >
-        </article>
-      </div>
-      <div>
-        <article>
-          <img src="./images/discorigido1.jpg" alt="" />
-          <h2>Disco Rigido Hdd 1tb Western Digital Blue</h2>
-          <h3>$5.989</h3>
-          <a href="#" class="boton_add" onclick="producto1()"
-            >Agregar al Carrito</a
-          >
-        </article>
-        <article>
-          <img src="./images/discorigido2.jpg" alt="" />
-          <h2>Disco Rigido Hdd 1tb Seagate Barracuda</h2>
-          <h3>$6.454</h3>
-          <a href="#" class="boton_add" onclick="producto2()"
-            >Agregar al Carrito</a
-          >
-        </article>
-        <article>
-          <img src="./images/discorigido3.jpg" alt="" />
-          <h2>Disco Rigido Hdd 2tb Western Digital Blue 256mb</h2>
-          <h3>$6.974</h3>
-          <a href="#" class="boton_add" onclick="producto3()"
-            >Agregar al Carrito</a
-          >
-        </article>
-        <article>
-          <img src="./images/discorigido4.jpg" alt="" />
-          <h2>Disco Rigido Hdd 6tb Toshiba Performance X300</h2>
-          <h3>$25.634</h3>
-          <a href="#" class="boton_add" onclick="producto4()"
-            >Agregar al Carrito</a
-          >
-        </article>
-      </div>
-    </section>-->
-
-
     <section class="presentacion">
       <h2>Almacenamiento</h2>
       <h3>Discos Rigidos</h3>
@@ -134,20 +62,20 @@
         
       
     </section>
-    <main id="productos-coenedor">
+    <section>
       <div class="modal-container" id="modal-container">
         <div class="modal-carrito">
-          <h3>carrito</h3>
-          <button id="cerrar">
-            Cerrar
-          </button>
-          <div class="carrito-contenedor">
+
+
+          <div id="carrito-contenedor">
 
           </div>
+          <button id="cerrar" class="boton_add">
+            Cerrar
+          </button>
         </div>
       </div>
-
-    </main>
+    </section>
   </body>
   <script defer src="./js/productos.js"  type="module"></script>
 </html>
