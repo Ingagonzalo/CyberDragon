@@ -209,6 +209,10 @@ header {
   margin-top: 20px;
 }
 
+.filtro{
+  display: none;
+}
+
 @media screen and (min-width: 480px) and (max-width: 1300px){
     .nav_item{
         display: none;
